@@ -1,0 +1,1698 @@
+{
+	"info": {
+		"_postman_id": "71bff475-b709-4088-a80c-52a20174d36c",
+		"name": "bloom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "chellange category",
+			"item": [
+				{
+					"name": "challenge category detail list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOm51bGwsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYiQxMCRIcG5NNTI0ekJ3ZFEzRmMyakJFMVl1RERNb3AybDZXNExSWGFRRkthRTVaWk5iaXNEeFM5MiIsImlzX2FjdGl2ZSI6MSwiaXNfYmxvY2tlZCI6MCwiY3JlYXRlZEF0IjoiMjAyMi0wNC0xMlQwNToxMDo1Ny4wMDBaIiwidXBkYXRlZEF0IjpudWxsLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDA1MzksImV4cCI6MTY0OTgyNjkzOX0.hilWfcm_d1QjE5JjNxpJgvC_NVCgwE0KvTgC4lRQCuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/challenge_category/detail?page=1&category_id=5",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"challenge_category",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "category_id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user challenge category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ1c2VyIjp7ImlkIjo3LCJuYW1lIjoieWFzaCIsImVtYWlsIjoieWFzaDFAZ21haWwuY29tIiwiZG9iIjoiIiwibW9iaWxlX25vIjoiMCIsInBhc3N3b3JkIjoiJDJiJDEwJHh3QTdjZE1DUE5Jb1VLSWlXTHR1Q09nVkZYcmpDTkoydnZCUmoyaWROcVpiaG4wd3gxZEJPIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVkQXQiOm51bGwsInVwZGF0ZWRBdCI6bnVsbH0sImlhdCI6MTY0OTQwMTkyNSwiZXhwIjoxNjQ5NDg4MzI1fQ.D_xQonhTrtPz6O0eGYngRZgc0jxQEeCAAjGFsmhJmdI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "challenge_category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "challenge_category_detail_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "is_join",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/challenge_category/challenge",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"challenge_category",
+								"challenge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Challenges",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOm51bGwsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYiQxMCRIcG5NNTI0ekJ3ZFEzRmMyakJFMVl1RERNb3AybDZXNExSWGFRRkthRTVaWk5iaXNEeFM5MiIsImlzX2FjdGl2ZSI6MSwiaXNfYmxvY2tlZCI6MCwiY3JlYXRlZEF0IjoiMjAyMi0wNC0xMlQwNToxMDo1Ny4wMDBaIiwidXBkYXRlZEF0IjpudWxsLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDA1MzksImV4cCI6MTY0OTgyNjkzOX0.hilWfcm_d1QjE5JjNxpJgvC_NVCgwE0KvTgC4lRQCuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/mychallenges",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"mychallenges"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bloom category",
+			"item": [
+				{
+					"name": "bloom category detail list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE4MTM3MzgsImV4cCI6MTY1MTkwMDEzOH0.NqsrHt8viYl6ogueeGBD1dEbLkG3xPbv5fHu_xl62Vw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom_category/detail?page=1&category_id=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom_category",
+								"detail"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user bloom category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE4MzA4OTUsImV4cCI6MTY1MTkxNzI5NX0.ObvbLJwBhhQsbGLgI47VpN8IOLZBW-0JtJ5rrR7pp_0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bloom_category_detail_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "is_bloom",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "question_id",
+									"value": "[1,2]",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "[7,3]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom_category/bloom",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom_category",
+								"bloom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Bloom",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOm51bGwsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYiQxMCRIcG5NNTI0ekJ3ZFEzRmMyakJFMVl1RERNb3AybDZXNExSWGFRRkthRTVaWk5iaXNEeFM5MiIsImlzX2FjdGl2ZSI6MSwiaXNfYmxvY2tlZCI6MCwiY3JlYXRlZEF0IjoiMjAyMi0wNC0xMlQwNToxMDo1Ny4wMDBaIiwidXBkYXRlZEF0IjpudWxsLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDA1MzksImV4cCI6MTY0OTgyNjkzOX0.hilWfcm_d1QjE5JjNxpJgvC_NVCgwE0KvTgC4lRQCuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/mybloom",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"mybloom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bloom Category Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom_category/addbloom",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom_category",
+								"addbloom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Detail Bloom add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "bloom_category_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "SAY NO TO VIDEO GAME",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "put your shoes on and call your friends for a day out or a picnic.Lets resolve not to play video game today and save electricity. Bloom your action once you are done.",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://previews.123rf.com/images/phanuchat/phanuchat1801/phanuchat180100003/94934021-poster-of-back-to-school-kids-school-education-concept-template-for-advertising-brochure-your-text-k.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom_category/addbloomdetail",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom_category",
+								"addbloomdetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Answer by user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE3NDAyNzYsImV4cCI6MTY1MTgyNjY3Nn0.A3evHOuowGuAJXZ0XzodTinGWrbKCZtzIrq9Vw0unYc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "question_id",
+									"value": "[1,2]",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "[5,3]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom/answer/2",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom",
+								"answer",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "question of bloom",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/question/1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"question",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "admin login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:8000/user/login",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8000",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Active vendor by Admin",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE3NDY0NDYsImV4cCI6MTY1MTgzMjg0Nn0.JTEnSuQVEemh630w0HKN2e8zO4ovKg4kryxIvLUjHe0",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "is_active",
+											"value": "0",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://0.0.0.0:8000/user/vendor/activate/1",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8000",
+									"path": [
+										"user",
+										"vendor",
+										"activate",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get vendor by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE4MTQ5MTksImV4cCI6MTY1MTkwMTMxOX0.b6JmgaHI82fIhu170sEspKtnGRRJXFOPW9Q7ssNJlOo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://0.0.0.0:8000/user/vendor/2",
+									"protocol": "http",
+									"host": [
+										"0",
+										"0",
+										"0",
+										"0"
+									],
+									"port": "8000",
+									"path": [
+										"user",
+										"vendor",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"umangvariya7@gmail.com\",\r\n    \"password\" :\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/login",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Darpan",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "darpan@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile_no",
+									"value": "7621980121",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/signup",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ1c2VyIjp7ImlkIjo3LCJuYW1lIjoieWFzaCIsImVtYWlsIjoieWFzaDFAZ21haWwuY29tIiwiZG9iIjoiIiwibW9iaWxlX25vIjoiMCIsInBhc3N3b3JkIjoiJDJiJDEwJHh3QTdjZE1DUE5Jb1VLSWlXTHR1Q09nVkZYcmpDTkoydnZCUmoyaWROcVpiaG4wd3gxZEJPIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVkQXQiOm51bGwsInVwZGF0ZWRBdCI6bnVsbCwiZGVsZXRlZEF0IjpudWxsfSwiaWF0IjoxNjQ5NjU1MjM5LCJleHAiOjE2NDk3NDE2Mzl9.7Ej7O4Z-rLpdOVL3Ti-M56YBcVJ8ui2OHtW9boZLLaM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/userdata",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"userdata"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "p",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get active user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3LCJ1c2VyIjp7ImlkIjo3LCJuYW1lIjoieWFzaCIsImVtYWlsIjoieWFzaDFAZ21haWwuY29tIiwiZG9iIjoiIiwibW9iaWxlX25vIjoiMCIsInBhc3N3b3JkIjoiJDJiJDEwJHh3QTdjZE1DUE5Jb1VLSWlXTHR1Q09nVkZYcmpDTkoydnZCUmoyaWROcVpiaG4wd3gxZEJPIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVkQXQiOm51bGwsInVwZGF0ZWRBdCI6bnVsbCwiZGVsZXRlZEF0IjpudWxsfSwiaWF0IjoxNjQ5NjU1MjM5LCJleHAiOjE2NDk3NDE2Mzl9.7Ej7O4Z-rLpdOVL3Ti-M56YBcVJ8ui2OHtW9boZLLaM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/info",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get list by category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOm51bGwsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYiQxMCRIcG5NNTI0ekJ3ZFEzRmMyakJFMVl1RERNb3AybDZXNExSWGFRRkthRTVaWk5iaXNEeFM5MiIsImlzX2FjdGl2ZSI6MSwiaXNfYmxvY2tlZCI6MCwiY3JlYXRlZEF0IjoiMjAyMi0wNC0xMlQwNToxMDo1Ny4wMDBaIiwidXBkYXRlZEF0IjpudWxsLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDA1MzksImV4cCI6MTY0OTgyNjkzOX0.hilWfcm_d1QjE5JjNxpJgvC_NVCgwE0KvTgC4lRQCuQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Darpan",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "12/11/1997",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/updateuser/7",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"updateuser",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6Inl1dmlAZ21haWwuY29tIiwiZG9iIjoiMTkvMDYvMjAwMCIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYSQxMiRSd21aMG56MHE5cm1ZeHF4VGxxSXdPV2pkM1dnTHZPRC56cS9wYU1Mb1ZnckRXZ1FjaXI3MiIsImlzX2FjdGl2ZSI6MSwiY3JlYXRlZEF0IjpudWxsLCJ1cGRhdGVkQXQiOm51bGx9LCJpYXQiOjE2NDk0MDQ2MDEsImV4cCI6MTY0OTQ5MTAwMX0.uuy2iCDTptUlEGzVde5dDlJ6m73v6-6-iD3RuFFXusw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/deleteuser/2",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"deleteuser",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6Inl1dmlAZ21haWwuY29tIiwiZG9iIjoiMTkvMDYvMjAwMCIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYSQxMiRSd21aMG56MHE5cm1ZeHF4VGxxSXdPV2pkM1dnTHZPRC56cS9wYU1Mb1ZnckRXZ1FjaXI3MiIsImlzX2FjdGl2ZSI6MSwiY3JlYXRlZEF0IjpudWxsLCJ1cGRhdGVkQXQiOm51bGx9LCJpYXQiOjE2NDk0MDQ2MDEsImV4cCI6MTY0OTQ5MTAwMX0.uuy2iCDTptUlEGzVde5dDlJ6m73v6-6-iD3RuFFXusw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/changepassword/1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"changepassword",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Block",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1LCJ1c2VyIjp7ImlkIjo1LCJuYW1lIjoieWFzaCIsImVtYWlsIjoieWFzaDFAZ21haWwuY29tIiwiZG9iIjoiIiwibW9iaWxlX25vIjoiMCIsInBhc3N3b3JkIjoiJDJiJDEwJHh3QTdjZE1DUE5Jb1VLSWlXTHR1Q09nVkZYcmpDTkoydnZCUmoyaWROcVpiaG4wd3gxZEJPIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVkQXQiOm51bGwsInVwZGF0ZWRBdCI6bnVsbCwiZGVsZXRlZEF0IjpudWxsfSwiaWF0IjoxNjQ5NjcxMTgxLCJleHAiOjE2NDk3NTc1ODF9.rC0Tw4EvETd2qP8aUzy1kSdylC9R-Fo063VlNLgR1yE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "is_block",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/block/1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"block",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rewards",
+			"item": [
+				{
+					"name": "Reward List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6Inl1dmlAZ21haWwuY29tIiwiZG9iIjoiMTkvMDYvMjAwMCIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYSQxMiRSd21aMG56MHE5cm1ZeHF4VGxxSXdPV2pkM1dnTHZPRC56cS9wYU1Mb1ZnckRXZ1FjaXI3MiIsImlzX2FjdGl2ZSI6MSwiY3JlYXRlZEF0IjpudWxsLCJ1cGRhdGVkQXQiOm51bGx9LCJpYXQiOjE2NDk0MDQ2MDEsImV4cCI6MTY0OTQ5MTAwMX0.uuy2iCDTptUlEGzVde5dDlJ6m73v6-6-iD3RuFFXusw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/reward/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"reward",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My Reward",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6Inl1dmlAZ21haWwuY29tIiwiZG9iIjoiMTkvMDYvMjAwMCIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwYXNzd29yZCI6IiQyYSQxMiRSd21aMG56MHE5cm1ZeHF4VGxxSXdPV2pkM1dnTHZPRC56cS9wYU1Mb1ZnckRXZ1FjaXI3MiIsImlzX2FjdGl2ZSI6MSwiY3JlYXRlZEF0IjpudWxsLCJ1cGRhdGVkQXQiOm51bGx9LCJpYXQiOjE2NDk0MDQ2MDEsImV4cCI6MTY0OTQ5MTAwMX0.uuy2iCDTptUlEGzVde5dDlJ6m73v6-6-iD3RuFFXusw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/myreward",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"myreward"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Participate",
+			"item": [
+				{
+					"name": "participate Bloom",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwibW9iaWxlX25vIjoiNzg3ODEyOTM4MyIsInBhc3N3b3JkIjoiJDJiJDEwJEhwbk01MjR6QndkUTNGYzJqQkUxWXVERE1vcDJsNlc0TFJYYVFGS2FFNVpaTmJpc0R4UzkyIiwiaXNfYWN0aXZlIjoxLCJpc19ibG9ja2VkIjowLCJjcmVhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjEwOjU3LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjE2OjE0LjAwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDY3MTQsImV4cCI6MTY0OTgzMzExNH0.mOYd-aXXaqCPX6NAmHbgY_EW-lW3SJJXjCX39xpLS6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/participate",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"participate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setting",
+			"item": [
+				{
+					"name": "Account Setting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwibW9iaWxlX25vIjoiNzg3ODEyOTM4MyIsInBhc3N3b3JkIjoiJDJiJDEwJEhwbk01MjR6QndkUTNGYzJqQkUxWXVERE1vcDJsNlc0TFJYYVFGS2FFNVpaTmJpc0R4UzkyIiwiaXNfYWN0aXZlIjoxLCJpc19ibG9ja2VkIjowLCJjcmVhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjEwOjU3LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjE2OjE0LjAwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDY3MTQsImV4cCI6MTY0OTgzMzExNH0.mOYd-aXXaqCPX6NAmHbgY_EW-lW3SJJXjCX39xpLS6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "is_profile_search",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "is_private_account",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/account_setting",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"account_setting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list of account setting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwibW9iaWxlX25vIjoiNzg3ODEyOTM4MyIsInBhc3N3b3JkIjoiJDJiJDEwJEhwbk01MjR6QndkUTNGYzJqQkUxWXVERE1vcDJsNlc0TFJYYVFGS2FFNVpaTmJpc0R4UzkyIiwiaXNfYWN0aXZlIjoxLCJpc19ibG9ja2VkIjowLCJjcmVhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjEwOjU3LjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA0LTEyVDA1OjE2OjE0LjAwMFoiLCJkZWxldGVkQXQiOm51bGx9LCJpYXQiOjE2NDk3NDY3MTQsImV4cCI6MTY0OTgzMzExNH0.mOYd-aXXaqCPX6NAmHbgY_EW-lW3SJJXjCX39xpLS6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/listing?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"listing"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendor",
+			"item": [
+				{
+					"name": "vendor login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"umang1@gmail.com\",\r\n    \"password\" :\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendorlogin",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendorlogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendor SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "Umang",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "conformation",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "umang1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "7878139383",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Surat",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "Innovate",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendorsignup",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendorsignup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add reward by vendor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyIjp7ImlkIjoyLCJmaXJzdF9uYW1lIjoiVW1hbmciLCJsYXN0X25hbWUiOiJjb25mb3JtYXRpb24iLCJlbWFpbCI6InVtYW5nMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRtd3gxMGF4bWkxQTgwWWI4Q3EzUS4uY00yajN4YnRGRGtVSEQ5LkV0VGVuVW5GVWVHZkgwNiIsInBob25lX25vIjoiNzg3ODEzOTM4MyIsImFkZHJlc3MiOiJTdXJhdCIsImNvbXBhbnlfbmFtZSI6Iklubm92YXRlIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVfYXQiOiIyMDIyLTA0LTI5VDExOjQ4OjA1LjAwMFoifSwiaWF0IjoxNjUxMjMyOTE4LCJleHAiOjE2NTEzMTkzMTh9.JhASrCzAN2wWzApIAhuETNYEmsaNVB8UDxvRimXY4jE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "ZARA",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "$1000 Flat on $10000 buy",
+									"description": " ",
+									"type": "text"
+								},
+								{
+									"key": "start_date",
+									"value": "29-05-2020",
+									"type": "text"
+								},
+								{
+									"key": "end_date",
+									"value": "30-06-2020",
+									"type": "text"
+								},
+								{
+									"key": "promo_code",
+									"value": "BVUHG455SADCS54FD",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://www.strategyzer.com/hubfs/zara-large.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendor/addreward",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendor",
+								"addreward"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reward",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyIjp7ImlkIjoyLCJmaXJzdF9uYW1lIjoiVW1hbmciLCJsYXN0X25hbWUiOiJWYXJpeWEiLCJlbWFpbCI6InVtYW5nMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRtd3gxMGF4bWkxQTgwWWI4Q3EzUS4uY00yajN4YnRGRGtVSEQ5LkV0VGVuVW5GVWVHZkgwNiIsInBob25lX25vIjoiNzg3ODEzOTM4MyIsImFkZHJlc3MiOiJTdXJhdCIsImNvbXBhbnlfbmFtZSI6Iklubm92YXRlIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVfYXQiOiIyMDIyLTA0LTI5VDExOjQ4OjA1LjAwMFoifSwiaWF0IjoxNjUxNDkzMzgyLCJleHAiOjE2NTE1Nzk3ODJ9.qxWckzBLn-FTq1tPll7RiJ-mkjUJdKnrhMz9wRO653w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendor/deletereward/1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendor",
+								"deletereward",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accept Request Of Vendor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJ1c2VyIjp7ImlkIjoyLCJmaXJzdF9uYW1lIjoiVW1hbmciLCJsYXN0X25hbWUiOiJjb25mb3JtYXRpb24iLCJlbWFpbCI6InVtYW5nMUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRtd3gxMGF4bWkxQTgwWWI4Q3EzUS4uY00yajN4YnRGRGtVSEQ5LkV0VGVuVW5GVWVHZkgwNiIsInBob25lX25vIjoiNzg3ODEzOTM4MyIsImFkZHJlc3MiOiJTdXJhdCIsImNvbXBhbnlfbmFtZSI6Iklubm92YXRlIiwiaXNfYWN0aXZlIjoxLCJjcmVhdGVfYXQiOiIyMDIyLTA0LTI5VDExOjQ4OjA1LjAwMFoifSwiaWF0IjoxNjUxNDY2Nzg1LCJleHAiOjE2NTE1NTMxODV9.6rbv1FKJNx-tLethn1g0rPTABQOiO2W8DRCeNRSLseA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendor/request",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendor",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Listing",
+			"item": [
+				{
+					"name": "bloom category list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom_category/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom_category",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "total post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/post/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"post",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chellange category list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/challenge_category/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"challenge_category",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reward List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/reward/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"reward",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vendor List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/vendor/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"vendor",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/user/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"user",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bloom List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/bloom/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"bloom",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Challenge List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/challenge/list?page=1",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"challenge",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Count",
+			"item": [
+				{
+					"name": "Total Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/all/total",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"all",
+								"total"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category of Bloom particular Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user/all/bloom",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"all",
+								"bloom"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "total and active",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiVW1hbmciLCJlbWFpbCI6InVtYW5ndmFyaXlhN0BnbWFpbC5jb20iLCJkb2IiOiIxOS8wNi8yMDAxIiwiYWJvdXRfeW91IjoiIiwiY2l0eSI6IiIsIm1vYmlsZV9ubyI6Ijc4NzgxMjkzODMiLCJwcm9maWxlX2ltZyI6bnVsbCwicGFzc3dvcmQiOiIkMmIkMTAkSHBuTTUyNHpCd2RRM0ZjMmpCRTFZdURETW9wMmw2VzRMUlhhUUZLYUU1WlpOYmlzRHhTOTIiLCJpc19hY3RpdmUiOjEsInR5cGUiOiJhZG1pbiIsImlzX2Jsb2NrZWQiOjAsImNyZWF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTA6NTcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjItMDQtMTJUMDU6MTY6MTQuMDAwWiIsImRlbGV0ZWRBdCI6IjIwMjItMDQtMTVUMDc6MTI6MzIuMDAwWiJ9LCJpYXQiOjE2NTE4MTQ5MTksImV4cCI6MTY1MTkwMTMxOX0.b6JmgaHI82fIhu170sEspKtnGRRJXFOPW9Q7ssNJlOo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/user/xyz?bloom_category_id=1",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"xyz"
+					],
+					"query": [
+						{
+							"key": "bloom_category_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
